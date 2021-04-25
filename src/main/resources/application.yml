@@ -1,4 +1,6 @@
-
+server:
+  port: 9080
+  
 spring:
   application:
     name: customer
