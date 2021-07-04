@@ -109,12 +109,14 @@ public class FabcarService {
             });
             byte[] result;
 
-
          // Add Listener
             network.addCommitListener(commitListener, network.getChannel().getPeers(), "createCar");
             
             result = contract.submitTransaction("createCar", car.getKey(), car.getColour(), car.getMake(), car.getModel(), car.getOwner());
             value = new String(result);
+            
+ 
+            
             logger.info("createCar submitTransaction result: {}", value);
             
         } catch (Exception e) {
