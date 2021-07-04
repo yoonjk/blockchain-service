@@ -26,6 +26,7 @@ public class FabcarController {
 		return "Hello";
 	}
 	
+	@ApiOperation(value = "cars", nickname = "cars search")
 	@GetMapping("/cars")
 	public String getAllCars() {
 		return fabcarService.getAllCars();
