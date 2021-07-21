@@ -23,6 +23,9 @@ public class FabcarController {
 	@ApiOperation(value = "getGreeting", nickname = "getGreeting")
 	@GetMapping
 	public String getHello() {
+		Car car = new Car();
+		
+		
 		return "Hello";
 	}
 	
