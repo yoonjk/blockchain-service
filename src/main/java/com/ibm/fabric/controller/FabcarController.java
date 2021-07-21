@@ -13,6 +13,7 @@ import com.ibm.fabric.service.FabcarService;
 
 import io.swagger.annotations.ApiOperation;
 
+@Slf4j
 @RestController
 @RequestMapping("/fabcar")
 public class FabcarController {
